@@ -16,7 +16,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Conn3"
-				(at 0.508 33.782 0)
+				(at -0.762 25.146 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -25,8 +25,8 @@
 					)
 				)
 			)
-			(property "Value" "Banana_Connectors_+5V"
-				(at 0.508 31.242 0)
+			(property "Value" "Banana_Connectors"
+				(at -0.762 22.606 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -35,7 +35,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TerminalBlock_Altech:Altech_AK100_1x02_P5.00mm"
+			(property "Footprint" "TerminalBlock_Altech:Altech_AK100_1x05_P5.00mm"
 				(at -0.254 19.812 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -162,6 +162,18 @@
 					)
 				)
 				(arc
+					(start -6.9893 -19.0431)
+					(mid -5.3907 -22.8424)
+					(end -6.9469 -26.6593)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
 					(start -6.9893 11.4124)
 					(mid -8.5897 15.2359)
 					(end -7.0176 19.0711)
@@ -213,6 +225,18 @@
 					(start -6.9893 -19.0676)
 					(mid -8.5897 -15.2441)
 					(end -7.0176 -11.4089)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.9893 -26.6876)
+					(mid -8.5897 -22.8641)
+					(end -7.0176 -19.0289)
 					(stroke
 						(width 0)
 						(type default)
@@ -277,6 +301,19 @@
 					(pts
 						(xy 6.35 -15.24) (xy 4.445 -11.43) (xy -6.985 -11.43) (xy -1.27 -13.97) (xy -1.27 -16.51) (xy -6.985 -19.05)
 						(xy 4.445 -19.05) (xy 6.35 -15.24)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 -22.86) (xy 4.445 -19.05) (xy -6.985 -19.05) (xy -1.27 -21.59) (xy -1.27 -24.13) (xy -6.985 -26.67)
+						(xy 4.445 -26.67) (xy 6.35 -22.86)
 					)
 					(stroke
 						(width 0)
@@ -369,6 +406,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -22.86 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1449,7 +1504,7 @@
 	(text_box "Connectors"
 		(exclude_from_sim no)
 		(at 218.44 72.39 0)
-		(size 63.5 59.69)
+		(size 63.5 64.77)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1513,14 +1568,14 @@
 		(uuid "0a5bc67e-4877-49d3-80b7-a686a54e37fd")
 	)
 	(junction
-		(at 247.65 36.83)
+		(at 250.19 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bc185240-168a-4bbf-a013-4d44cda16ea6")
+		(uuid "b8d6660c-643d-46e6-89d0-decf04ad7e7e")
 	)
 	(wire
 		(pts
-			(xy 247.65 36.83) (xy 247.65 38.1)
+			(xy 247.65 26.67) (xy 247.65 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1560,7 +1615,17 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 35.56) (xy 250.19 38.1)
+			(xy 255.27 128.27) (xy 250.19 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a69531d-3a55-4e33-a976-b2769a41c485")
+	)
+	(wire
+		(pts
+			(xy 250.19 35.56) (xy 250.19 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1590,6 +1655,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 36.83) (xy 250.19 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57192804-34cf-469b-856a-cb4a5fa3d9d9")
+	)
+	(wire
+		(pts
 			(xy 236.22 41.91) (xy 236.22 43.18)
 		)
 		(stroke
@@ -1607,16 +1682,6 @@
 			(type default)
 		)
 		(uuid "591ab77f-157b-493d-bbb3-5b060f3439ac")
-	)
-	(wire
-		(pts
-			(xy 246.38 35.56) (xy 247.65 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b86df31-a7fb-4dfa-a477-d544ff000897")
 	)
 	(wire
 		(pts
@@ -1710,6 +1775,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 36.83) (xy 250.19 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a120cff0-bb04-4a34-9413-6c20294f4aef")
+	)
+	(wire
+		(pts
 			(xy 186.69 50.8) (xy 187.96 52.07)
 		)
 		(stroke
@@ -1717,16 +1792,6 @@
 			(type default)
 		)
 		(uuid "a66ba7f4-c979-4f8a-b9d0-31cbb863e998")
-	)
-	(wire
-		(pts
-			(xy 247.65 35.56) (xy 247.65 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6ee49d5-4d3a-43b1-bd3c-7c520e261efd")
 	)
 	(wire
 		(pts
@@ -1740,13 +1805,23 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 35.56) (xy 246.38 35.56)
+			(xy 243.84 33.02) (xy 246.38 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b63d3daf-e5e9-4dde-a8a7-80058ab5ef53")
+	)
+	(wire
+		(pts
+			(xy 246.38 33.02) (xy 246.38 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b641811a-309f-4aa8-85a7-06339d132fc5")
 	)
 	(wire
 		(pts
@@ -1854,7 +1929,7 @@
 	)
 	(global_label "+5v"
 		(shape input)
-		(at 250.19 35.56 90)
+		(at 247.65 26.67 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1864,7 +1939,7 @@
 		)
 		(uuid "3a80c6d0-4aa5-4ada-a35e-4605f05fd1b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 250.19 28.8253 90)
+			(at 247.65 19.0885 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1878,30 +1953,6 @@
 	)
 	(global_label "+12v"
 		(shape input)
-		(at 269.24 97.79 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "51abca82-33a0-4eeb-b815-61b3daa59f03")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 277.1842 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "+3v3"
-		(shape input)
 		(at 262.89 123.19 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1910,7 +1961,7 @@
 			)
 			(justify left)
 		)
-		(uuid "9d5a91c0-d323-4ca2-8ca1-12eb9ed9a55d")
+		(uuid "51abca82-33a0-4eeb-b815-61b3daa59f03")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 270.8342 123.19 0)
 			(hide yes)
@@ -1924,9 +1975,33 @@
 			)
 		)
 	)
+	(global_label "+3v3"
+		(shape input)
+		(at 269.24 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d5a91c0-d323-4ca2-8ca1-12eb9ed9a55d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 277.1842 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "VIN+"
 		(shape input)
-		(at 247.65 35.56 90)
+		(at 250.19 35.56 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1936,7 +2011,7 @@
 		)
 		(uuid "a6adc0a3-5437-4328-a7c3-50ceaf18cfb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.65 27.9785 90)
+			(at 250.19 28.8253 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1974,7 +2049,7 @@
 	)
 	(global_label "+Adjustable"
 		(shape input)
-		(at 262.89 114.3 0)
+		(at 264.16 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1984,7 +2059,7 @@
 		)
 		(uuid "d209563a-a7d8-4b26-8fef-f5d66f43fb76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 277.2446 114.3 0)
+			(at 270.8947 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2022,7 +2097,7 @@
 	)
 	(global_label "+5v"
 		(shape input)
-		(at 264.16 105.41 0)
+		(at 262.89 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2032,7 +2107,7 @@
 		)
 		(uuid "d8cb2139-cd61-4012-a7c0-6967c2776d3b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 270.8947 105.41 0)
+			(at 277.2446 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2046,7 +2121,7 @@
 	)
 	(global_label "+12v"
 		(shape input)
-		(at 245.11 35.56 90)
+		(at 243.84 33.02 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2056,7 +2131,7 @@
 		)
 		(uuid "ef62769d-0381-44f8-adf6-2c0723ca04e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 245.11 27.6158 90)
+			(at 243.84 25.0758 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2497,7 +2572,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Altech:Altech_AK100_1x05_P5.00mm"
 			(at 247.65 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -2745,7 +2820,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Altech:Altech_AK100_1x05_P5.00mm"
+		(property "Footprint" "TerminalBlock_Altech:Altech_AK100_1x06_P5.00mm"
 			(at 239.776 85.598 0)
 			(hide yes)
 			(show_name no)
@@ -2792,6 +2867,9 @@
 		)
 		(pin "4"
 			(uuid "9fbe71ea-398c-4e6e-82ec-074d12959998")
+		)
+		(pin "6"
+			(uuid "0a44bf41-0ef8-45e4-996e-8d51e2b7f036")
 		)
 		(instances
 			(project "SnakeBench_Schem"
@@ -3040,6 +3118,84 @@
 			(project "SnakeBench_Schem"
 				(path "/996e77d2-53ba-40ea-9cac-ec9750258f54"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND2")
+		(at 255.27 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f810709a-3c1f-43a3-a433-5ff4dac636b1")
+		(property "Reference" "#PWR05"
+			(at 255.27 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND2"
+			(at 255.27 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND2\" , ground"
+			(at 255.27 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a637325b-9cf4-4588-9209-477941c47ce0")
+		)
+		(instances
+			(project "SnakeBench_Schem"
+				(path "/996e77d2-53ba-40ea-9cac-ec9750258f54"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
