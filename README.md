@@ -2,7 +2,7 @@
 ----------------
 
 <p align="center">
-  <img src="Photos/Snake_Bench_Purple.png" alt="Centered Image" width="250">
+  <img src="Photos/Snake_Bench_Purple.png" alt="Centered Image" width="400">
 </p>
 
 -----------------
