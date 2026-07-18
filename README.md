@@ -9,7 +9,7 @@
 
 ## Description:
 
-A snake-Styled Desktop Bench power supply, With adjustable Voltage, and fixed outputs.
+A snake-Styled Desktop Bench power supply, With adjustable Voltage, and fixed outputs, The project is Polished while working on the Panal Banana plugs places and shape. So every Snake, has its indication. 
 
 ## Why Iam Making this?
 
